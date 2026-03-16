@@ -89,11 +89,11 @@ const numList = () => {
 };
 console.log(numList());
 
-const oddNum = numbers.filter((num) => {
+let oddNum = [];
+
+numbers.forEach((num) => {
   if (num % 2 !== 0) {
-    return true;
-  } else {
-    return false;
+    return oddNum.push(num);
   }
 });
 console.log(oddNum);
