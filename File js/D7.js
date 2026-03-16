@@ -13,15 +13,18 @@ console.log(string("Hello", "World"));
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 console.log("Exercise 2");
-let randomNums = () => {
+const numCreator = () => {
   let numbers = [];
-  for (let i = 0; i < 10; i++) {
-    let numGen = Math.ceil(Math.random() * 100);
-    numbers.push(numGen);
-  }
-  return numbers;
+  let randomNums = () => {
+    for (let i = 0; i < 10; i++) {
+      let numGen = Math.ceil(Math.random() * 100);
+      numbers.push(numGen);
+    }
+    return numbers;
+  };
+  return randomNums();
 };
-console.log(randomNums());
+console.log(numCreator());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
