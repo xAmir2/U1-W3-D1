@@ -17,7 +17,7 @@ const numCreator = () => {
   let numbers = [];
   let randomNums = () => {
     for (let i = 0; i < 10; i++) {
-      let numGen = Math.ceil(Math.random() * 100);
+      let numGen = Math.floor(Math.random() * 101);
       numbers.push(numGen);
     }
     return numbers;
